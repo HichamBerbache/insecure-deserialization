@@ -34,16 +34,6 @@ This is a basic Flask web application that allows users to set and view theme pr
 
 3. The home page displays the current theme preference. You can click on the "Set Light Theme" or "Set Dark Theme" links to change the theme preference.
 
-## Cookie Serialization
 
-The app uses the `pickle` module to serialize and deserialize the theme preferences before storing and retrieving them from cookies. This is done to demonstrate a basic usage of serialization in a Flask app.
-
-**Note:** In a real-world scenario, using `pickle` for serialization can have security implications. Always be cautious when dealing with user input and consider using safer serialization formats.
-
-## Contributing
-
-If you find any issues or have improvements to suggest, please feel free to open an issue or create a pull request.
-
-## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
