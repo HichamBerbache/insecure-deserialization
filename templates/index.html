@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Preferences</title>
+    <style>
+        body {
+            background-color: {% if theme == 'light' %}#f0f0f0{% else %}#333333{% endif %};
+            color: {% if theme == 'light' %}#000000{% else %}#ffffff{% endif %};
+        }
+    </style>
+</head>
+<body>
+    <h1>Theme Preferences</h1>
+    <p>Current Theme: {{ theme }}</p>
+    <a href="{{ url_for('set_theme', theme='light') }}">Set Light Theme</a> |
+    <a href="{{ url_for('set_theme', theme='dark') }}">Set Dark Theme</a>
+</body>
+</html>
